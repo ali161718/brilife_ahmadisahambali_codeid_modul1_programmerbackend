@@ -19,9 +19,7 @@ public class ConsumerRequest {
     public ConsumerRequest() {
     }
 
-    public ConsumerRequest(Integer id, @NotBlank ProvinceRequest province, @NotBlank ContraceptionRequest contraception,
-                           @NotNull Integer amount) {
-        this.id = id;
+    public ConsumerRequest(@NotBlank ProvinceRequest province, @NotBlank ContraceptionRequest contraception, @NotNull Integer amount) {
         this.province = province;
         this.contraception = contraception;
         this.amount = amount;
